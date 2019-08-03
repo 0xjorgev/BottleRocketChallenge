@@ -14,6 +14,12 @@
 		1820286022F56CDA005598B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1820285E22F56CDA005598B5 /* LaunchScreen.storyboard */; };
 		1820286B22F56CDA005598B5 /* BottleRocketChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1820286A22F56CDA005598B5 /* BottleRocketChallengeTests.swift */; };
 		1820287622F56CDA005598B5 /* BottleRocketChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1820287522F56CDA005598B5 /* BottleRocketChallengeUITests.swift */; };
+		1820288422F56D66005598B5 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1820288322F56D66005598B5 /* Restaurant.swift */; };
+		188216F522F56E0300914A16 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188216F422F56E0300914A16 /* Location.swift */; };
+		188216F722F56E1900914A16 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188216F622F56E1900914A16 /* Contact.swift */; };
+		188216FB22F56FD400914A16 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188216FA22F56FD400914A16 /* MapKit.framework */; };
+		188216FE22F577F700914A16 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188216FD22F577F700914A16 /* Service.swift */; };
+		1882170022F5789900914A16 /* RestaurantWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188216FF22F5789900914A16 /* RestaurantWrapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		1820287122F56CDA005598B5 /* BottleRocketChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BottleRocketChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1820287522F56CDA005598B5 /* BottleRocketChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottleRocketChallengeUITests.swift; sourceTree = "<group>"; };
 		1820287722F56CDB005598B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1820288322F56D66005598B5 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		188216F422F56E0300914A16 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		188216F622F56E1900914A16 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		188216FA22F56FD400914A16 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		188216FD22F577F700914A16 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		188216FF22F5789900914A16 /* RestaurantWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantWrapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				188216FB22F56FD400914A16 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +94,7 @@
 				1820286922F56CDA005598B5 /* BottleRocketChallengeTests */,
 				1820287422F56CDA005598B5 /* BottleRocketChallengeUITests */,
 				1820285322F56CD4005598B5 /* Products */,
+				188216F922F56FD400914A16 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +111,14 @@
 		1820285422F56CD5005598B5 /* BottleRocketChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				188216FC22F577E500914A16 /* Utils */,
 				1820285522F56CD5005598B5 /* AppDelegate.swift */,
 				1820285722F56CD5005598B5 /* ViewController.swift */,
 				1820285922F56CD5005598B5 /* Main.storyboard */,
 				1820285C22F56CDA005598B5 /* Assets.xcassets */,
 				1820285E22F56CDA005598B5 /* LaunchScreen.storyboard */,
 				1820286122F56CDA005598B5 /* Info.plist */,
+				188216F822F56E2300914A16 /* New Group */,
 			);
 			path = BottleRocketChallenge;
 			sourceTree = "<group>";
@@ -123,6 +139,33 @@
 				1820287722F56CDB005598B5 /* Info.plist */,
 			);
 			path = BottleRocketChallengeUITests;
+			sourceTree = "<group>";
+		};
+		188216F822F56E2300914A16 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				1820288322F56D66005598B5 /* Restaurant.swift */,
+				188216F422F56E0300914A16 /* Location.swift */,
+				188216F622F56E1900914A16 /* Contact.swift */,
+				188216FF22F5789900914A16 /* RestaurantWrapper.swift */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		188216F922F56FD400914A16 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				188216FA22F56FD400914A16 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		188216FC22F577E500914A16 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				188216FD22F577F700914A16 /* Service.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +236,11 @@
 				TargetAttributes = {
 					1820285122F56CD4005598B5 = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					1820286522F56CDA005598B5 = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -258,6 +306,11 @@
 			files = (
 				1820285822F56CD5005598B5 /* ViewController.swift in Sources */,
 				1820285622F56CD5005598B5 /* AppDelegate.swift in Sources */,
+				188216F722F56E1900914A16 /* Contact.swift in Sources */,
+				188216F522F56E0300914A16 /* Location.swift in Sources */,
+				1820288422F56D66005598B5 /* Restaurant.swift in Sources */,
+				188216FE22F577F700914A16 /* Service.swift in Sources */,
+				1882170022F5789900914A16 /* RestaurantWrapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
