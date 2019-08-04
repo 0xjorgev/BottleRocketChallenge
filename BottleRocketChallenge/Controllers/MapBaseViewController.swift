@@ -14,7 +14,7 @@ class MapBaseViewController: UIViewController, MKMapViewDelegate, CLLocationMana
     
     @IBOutlet var mapView:MKMapView?
     let locationManager = CLLocationManager()
-    let regionRadius: CLLocationDistance = 1000
+    let regionRadius: CLLocationDistance = 2000
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +25,6 @@ class MapBaseViewController: UIViewController, MKMapViewDelegate, CLLocationMana
     func centerMapOnLocation(lat:CLLocationDegrees, long:CLLocationDegrees) {
         
         let location = CLLocation(latitude: lat, longitude: long)
-        
         let coordinateRegion = MKCoordinateRegion(center: location.coordinate,
                                                   latitudinalMeters: regionRadius, longitudinalMeters: regionRadius)
         mapView?.setRegion(coordinateRegion, animated: true)
@@ -39,35 +38,10 @@ class MapBaseViewController: UIViewController, MKMapViewDelegate, CLLocationMana
     func addMapAnnotation(annotation:MKAnnotation) {
         
         self.mapView?.addAnnotation(annotation)
-        
     }
     
-    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-        guard let annotation = annotation as? RestaurantMapAnnotation else { return nil }
-        let identifier = "marker"
-        var view: MKMarkerAnnotationView
-        if let dequeuedView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
-            as? MKMarkerAnnotationView {
-            dequeuedView.annotation = annotation
-            view = dequeuedView
-        } else {
-            view = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: identifier)
-            view.canShowCallout = true
-            view.calloutOffset = CGPoint(x: -5, y: 5)
-            view.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
-        }
-        return view
+    @IBAction func dismissView(sender:UIButton){
+        self.dismiss(animated: true, completion: nil)
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

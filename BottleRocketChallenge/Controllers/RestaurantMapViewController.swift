@@ -7,25 +7,31 @@
 //
 
 import UIKit
+import MapKit
 
 class RestaurantMapViewController: MapBaseViewController {
+    
+    var items:[Restaurant]?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        addDismissItem()
-        // Do any additional setup after loading the view.
+        
+        let annotations = items?.compactMap{ rest -> RestaurantMapAnnotation in
+            
+            let coordinate = CLLocationCoordinate2D(latitude: CLLocationDegrees(rest.location?.lat ?? 0.0), longitude: CLLocationDegrees(rest.location?.lng ?? 0.0))
+            return RestaurantMapAnnotation(title: rest.name, name: rest.category, coordinate: coordinate)
+        }
+        
+        DispatchQueue.main.async { [weak self] in
+            
+            _ = annotations?.compactMap{
+                self?.addMapAnnotation(annotation: $0)
+            }
+            
+            self?.centerMapOnLocation(lat: CLLocationDegrees(self?.items?.first?.location?.lat ?? 0.0), long: CLLocationDegrees(self?.items?.first?.location?.lng ?? 0.0))
+        }
+        
+        self.addDismissItem()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

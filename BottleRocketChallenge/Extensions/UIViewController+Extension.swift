@@ -22,13 +22,13 @@ extension UIViewController {
         self.navigationItem.titleView = label
     }
     
-    func addMapNavigationItem(){
-        
-        let barButton = UIBarButtonItem.init(image: UIImage(named:"icon_map"), style: .plain, target: self, action: #selector(presentMapView))
-        
-        self.navigationItem.rightBarButtonItem = barButton
-        
-    }
+//    func addMapNavigationItem(){
+//
+//        let barButton = UIBarButtonItem.init(image: UIImage(named:"icon_map"), style: .plain, target: self, action: #selector(presentMapView))
+//
+//        self.navigationItem.rightBarButtonItem = barButton
+//
+//    }
     
     func addCustomBackItem(){
         
@@ -41,8 +41,6 @@ extension UIViewController {
     func addDismissItem(){
         
         let barButton = UIBarButtonItem.init(title: "Done", style: .plain, target: self, action: #selector(dismissMapView))
-            
-            //.init(image: UIImage(named:"ic_webBack"), style: .plain, target: self, action: #selector(popToView))
         
         self.navigationItem.rightBarButtonItem = barButton
         
@@ -54,17 +52,9 @@ extension UIViewController {
     
     @objc func presentMapView(sender:UIBarButtonItem){
         
-        //RestaurantMapViewController
-        
-        //print("MapView ... !")
-        
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         
         let maps = storyboard.instantiateViewController(withIdentifier: "RestaurantMapViewController") as! RestaurantMapViewController
-        
-        //detail.item = self.items?[indexPath.row]
-        
-        //self.navigationController?.pushViewController(detail, animated: true)
         
         self.present(maps, animated: true, completion: nil)
         
@@ -78,15 +68,11 @@ extension UIViewController {
     func addRestaurantNavigationStyle(){
         
         addNavigationTitleStyle(title: "Lunch Tyme")
-        
-        addMapNavigationItem()
     }
     
     func addRestaurantDetailNavigationStyle(title:String){
         
         addNavigationTitleStyle(title: title)
-        
-        addMapNavigationItem()
         
         addCustomBackItem()
     }

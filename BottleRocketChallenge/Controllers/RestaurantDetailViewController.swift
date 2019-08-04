@@ -19,6 +19,7 @@ class RestaurantDetailViewController: MapBaseViewController {
     @IBOutlet var twitterLabel:UILabel?
     @IBOutlet var panelView:UIView?
     var item:Restaurant?
+    var items:[Restaurant]?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +29,8 @@ class RestaurantDetailViewController: MapBaseViewController {
         showDetails(with: self.item)
         
         setupMapView()
+        
+        addMapNavigationItem()
         
     }
     
@@ -78,6 +81,25 @@ class RestaurantDetailViewController: MapBaseViewController {
         let annotation = self.createMapAnnotation(location: CLLocationCoordinate2D(latitude: lat, longitude: lng) , title: self.item?.name ?? "", name: self.item?.category ?? "")
         self.addMapAnnotation(annotation: annotation)
         
+    }
+    
+    func addMapNavigationItem(){
+        
+        let barButton = UIBarButtonItem.init(image: UIImage(named:"icon_map"), style: .plain, target: self, action: #selector(addMapItem))
+        
+        self.navigationItem.rightBarButtonItem = barButton
+        
+    }
+    
+    @objc func addMapItem(sender:UIBarButtonItem){
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        
+        let maps = storyboard.instantiateViewController(withIdentifier: "RestaurantMapViewController") as! RestaurantMapViewController
+        
+        maps.items = self.items
+        
+        self.present(maps, animated: true, completion: nil)
     }
     
 }

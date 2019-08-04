@@ -27,6 +27,8 @@ class RestaurantViewController: BaseCollectionViewController<Restaurant, UIColle
         
         detail.item = self.items?[indexPath.row]
         
+        detail.items = self.items
+        
         self.navigationController?.pushViewController(detail, animated: true)
     }
     
@@ -44,9 +46,26 @@ class RestaurantViewController: BaseCollectionViewController<Restaurant, UIColle
             }
             
             self.stopSpinner()
-            
         }
+    }
+    
+    func addMapNavigationItem(){
         
+        let barButton = UIBarButtonItem.init(image: UIImage(named:"icon_map"), style: .plain, target: self, action: #selector(addMapItem))
+        
+        self.navigationItem.rightBarButtonItem = barButton
+        
+    }
+    
+    @objc func addMapItem(sender:UIBarButtonItem){
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        
+        let maps = storyboard.instantiateViewController(withIdentifier: "RestaurantMapViewController") as! RestaurantMapViewController
+        
+        maps.items = self.items
+        
+        self.present(maps, animated: true, completion: nil)
     }
     
     
@@ -55,6 +74,8 @@ class RestaurantViewController: BaseCollectionViewController<Restaurant, UIColle
         super.viewDidLoad()
         
         self.addRestaurantNavigationStyle()
+        
+        self.addMapNavigationItem()
     }
 
 }

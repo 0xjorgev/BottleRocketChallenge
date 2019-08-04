@@ -15,6 +15,7 @@
 		181E288222F7211400D08CB5 /* MapBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181E288122F7211400D08CB5 /* MapBaseViewController.swift */; };
 		181E288422F7217D00D08CB5 /* RestaurantMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181E288322F7217D00D08CB5 /* RestaurantMapViewController.swift */; };
 		181E288622F72E5700D08CB5 /* RestaurantMapAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181E288522F72E5700D08CB5 /* RestaurantMapAnnotation.swift */; };
+		181E288822F73A5700D08CB5 /* BrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181E288722F73A5700D08CB5 /* BrowserViewController.swift */; };
 		1820285622F56CD5005598B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1820285522F56CD5005598B5 /* AppDelegate.swift */; };
 		1820285822F56CD5005598B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1820285722F56CD5005598B5 /* ViewController.swift */; };
 		1820285B22F56CD5005598B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1820285922F56CD5005598B5 /* Main.storyboard */; };
@@ -60,6 +61,7 @@
 		181E288122F7211400D08CB5 /* MapBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapBaseViewController.swift; sourceTree = "<group>"; };
 		181E288322F7217D00D08CB5 /* RestaurantMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantMapViewController.swift; sourceTree = "<group>"; };
 		181E288522F72E5700D08CB5 /* RestaurantMapAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantMapAnnotation.swift; sourceTree = "<group>"; };
+		181E288722F73A5700D08CB5 /* BrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserViewController.swift; sourceTree = "<group>"; };
 		1820285222F56CD4005598B5 /* BottleRocketChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BottleRocketChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1820285522F56CD5005598B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1820285722F56CD5005598B5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -224,6 +226,7 @@
 				181E287922F6322F00D08CB5 /* RestaurantDetailViewController.swift */,
 				181E288122F7211400D08CB5 /* MapBaseViewController.swift */,
 				181E288322F7217D00D08CB5 /* RestaurantMapViewController.swift */,
+				181E288722F73A5700D08CB5 /* BrowserViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -389,6 +392,7 @@
 				188216FE22F577F700914A16 /* Service.swift in Sources */,
 				1833509C22F62AEA00069794 /* TabBarViewController.swift in Sources */,
 				1882170022F5789900914A16 /* RestaurantWrapper.swift in Sources */,
+				181E288822F73A5700D08CB5 /* BrowserViewController.swift in Sources */,
 				181E287A22F6322F00D08CB5 /* RestaurantDetailViewController.swift in Sources */,
 				1882170322F5999D00914A16 /* BaseCollectionViewController.swift in Sources */,
 			);
