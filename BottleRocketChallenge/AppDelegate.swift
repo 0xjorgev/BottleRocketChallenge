@@ -15,8 +15,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        testService()
+        
+        let tabBar = TabBarViewController()
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        
+        window?.rootViewController = tabBar
+        
+        window?.makeKeyAndVisible()
+        
+        for family in UIFont.familyNames {
+            print("\(family)")
+            
+            for name in UIFont.fontNames(forFamilyName: family) {
+                print("   \(name)")
+            }
+        }
+        
         return true
     }
 
