@@ -32,7 +32,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="180"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tmpBackground" translatesAutoresizingMaskIntoConstraints="NO" id="nfz-cx-Irx">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nfz-cx-Irx">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="180"/>
                                         </imageView>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cellGradientBackground" translatesAutoresizingMaskIntoConstraints="NO" id="ESi-UQ-Mv0">
@@ -231,6 +231,5 @@
     <resources>
         <image name="cellGradientBackground" width="320" height="116"/>
         <image name="ic_close" width="19" height="18"/>
-        <image name="tmpBackground" width="320" height="180"/>
     </resources>
 </document>

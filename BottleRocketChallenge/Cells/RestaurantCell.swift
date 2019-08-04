@@ -19,11 +19,9 @@ class RestaurantCell: UICollectionViewCell {
             DispatchQueue.main.async { [weak self] in
                 
                 self?.setupViews()
-                
                 self?.nameLabel?.text = self?.item?.name ?? ""
-                
                 self?.categoryLabel?.text = self?.item?.category ?? ""
-                
+                self?.backgroundImage?.imageFromServerURL(urlString: self?.item?.backgroundImageURL ?? "", defaultImage: "rect")
             }
         }
     }
@@ -31,7 +29,6 @@ class RestaurantCell: UICollectionViewCell {
     private func setupViews(){
         
         nameLabel?.addTitleStyle()
-        
         categoryLabel?.addCategoryStyle()
         
     }

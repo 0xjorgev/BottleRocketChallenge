@@ -45,7 +45,15 @@ class BaseCollectionViewController<T, Cell: UICollectionViewCell>: UICollectionV
         
         let collectionViewSize = collectionView.frame.size.width
         
-        return CGSize(width: collectionViewSize, height: 180.0)
+        let padding:CGFloat = 5.0
+        
+        switch UIDevice.current.userInterfaceIdiom {
+            case UIUserInterfaceIdiom.pad:
+                return CGSize(width: (collectionViewSize - padding) / 2.0, height: 180.0)
+            
+            default:
+                return CGSize(width: collectionViewSize, height: 180.0)
+        }
     }
     
     func shouldInvalidateLayout(forBoundsChange newBounds: CGRect) -> Bool{

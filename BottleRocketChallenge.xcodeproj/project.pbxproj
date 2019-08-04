@@ -16,6 +16,7 @@
 		181E288422F7217D00D08CB5 /* RestaurantMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181E288322F7217D00D08CB5 /* RestaurantMapViewController.swift */; };
 		181E288622F72E5700D08CB5 /* RestaurantMapAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181E288522F72E5700D08CB5 /* RestaurantMapAnnotation.swift */; };
 		181E288822F73A5700D08CB5 /* BrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181E288722F73A5700D08CB5 /* BrowserViewController.swift */; };
+		181E288A22F7737100D08CB5 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181E288922F7737100D08CB5 /* UIImageView+Extension.swift */; };
 		1820285622F56CD5005598B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1820285522F56CD5005598B5 /* AppDelegate.swift */; };
 		1820285822F56CD5005598B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1820285722F56CD5005598B5 /* ViewController.swift */; };
 		1820285B22F56CD5005598B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1820285922F56CD5005598B5 /* Main.storyboard */; };
@@ -62,6 +63,7 @@
 		181E288322F7217D00D08CB5 /* RestaurantMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantMapViewController.swift; sourceTree = "<group>"; };
 		181E288522F72E5700D08CB5 /* RestaurantMapAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantMapAnnotation.swift; sourceTree = "<group>"; };
 		181E288722F73A5700D08CB5 /* BrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserViewController.swift; sourceTree = "<group>"; };
+		181E288922F7737100D08CB5 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		1820285222F56CD4005598B5 /* BottleRocketChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BottleRocketChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1820285522F56CD5005598B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1820285722F56CD5005598B5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 			children = (
 				181B8FC822F5C8F0005DC764 /* UILabel+Extension.swift */,
 				181E287D22F6E00A00D08CB5 /* UIViewController+Extension.swift */,
+				181E288922F7737100D08CB5 /* UIImageView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -384,6 +387,7 @@
 				1820285622F56CD5005598B5 /* AppDelegate.swift in Sources */,
 				188216F722F56E1900914A16 /* Contact.swift in Sources */,
 				188216F522F56E0300914A16 /* Location.swift in Sources */,
+				181E288A22F7737100D08CB5 /* UIImageView+Extension.swift in Sources */,
 				181E288622F72E5700D08CB5 /* RestaurantMapAnnotation.swift in Sources */,
 				1882170522F5C2C700914A16 /* RestaurantViewController.swift in Sources */,
 				1820288422F56D66005598B5 /* Restaurant.swift in Sources */,

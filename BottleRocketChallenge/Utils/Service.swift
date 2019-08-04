@@ -11,16 +11,11 @@ import Foundation
 class Service {
     
     static let shared = Service()
-    
     let session = URLSession.shared
-    
     private let baseUrl = "https://s3.amazonaws.com"
     
     private func singleObjectGetRequest<T:Decodable>(url:String, model:T.Type, debug:Bool = false, completion: @escaping (T?, Error?) -> Void ){
-        
-        
         var reqEndpoint = URL.init(string: baseUrl)
-        
         reqEndpoint?.appendPathComponent(url)
         
         let dataTask = session.dataTask(with: reqEndpoint!) {
@@ -45,7 +40,6 @@ class Service {
                 }
                 
                 let decodedModel = try decoder.decode(T.self, from: responseData)
-                
                 completion(decodedModel, nil)
             } catch {
                 print("error trying to convert data to JSON")
@@ -60,16 +54,13 @@ class Service {
     
     func fetchRestaurants(component:String, handler: @escaping (RestaurantWrapper?, Error?) -> Void ){
         
-        self.singleObjectGetRequest(url: component, model: RestaurantWrapper.self, debug:true) { (res, err) in
+        self.singleObjectGetRequest(url: component, model: RestaurantWrapper.self, debug:false) { (res, err) in
             
             if err == nil {
-                
                 handler(res, nil)
                 
             } else {
-                
                 handler(nil, err)
-                
                 print("Error: \(err?.localizedDescription ?? "Unknown error")")
                 
             }
