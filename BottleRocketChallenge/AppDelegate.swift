@@ -20,6 +20,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = tabBar
         window?.makeKeyAndVisible()
         
+        UIApplication.shared.isStatusBarHidden = true
+        
+        //UIApplication.shared.statusBarStyle = .lightContent
+        
         return true
     }
 }

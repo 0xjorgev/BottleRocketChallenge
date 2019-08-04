@@ -27,7 +27,6 @@ class BaseCollectionViewController<T, Cell: UICollectionViewCell>: UICollectionV
         self.startSpinner()
         getData()
     }
-
     // MARK: UICollectionViewDataSource
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
