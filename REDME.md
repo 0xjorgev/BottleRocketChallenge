@@ -2,12 +2,12 @@
 
 This project is an app developed according to _Bottle Rocket iOS Engineering Test_ Document. It does not contains any third party library and was built using vanilla Swift with UIKit.
 
-![iPhone-1.png](https://github.com/jorgevmendoza/BottleRocketChallenge/blob/master/img/iPhone-1.png?raw=true =250x)
-![iPhone-2.png](https://github.com/jorgevmendoza/BottleRocketChallenge/blob/master/img/iPhone-2.png?raw=true =250x)
-![iPhone-3.png](https://github.com/jorgevmendoza/BottleRocketChallenge/blob/master/img/iPhone-3.png?raw=true =250x)
-![iPad-1.png](https://github.com/jorgevmendoza/BottleRocketChallenge/blob/master/img/iPad-1.png?raw=true =250x)
-![iPad-2.png](https://github.com/jorgevmendoza/BottleRocketChallenge/blob/master/img/iPad-2.png?raw=true =250x)
-![iPad-3.png](https://github.com/jorgevmendoza/BottleRocketChallenge/blob/master/img/iPad-3.png?raw=true =250x)
+![iPhone-1.png](https://github.com/jorgevmendoza/BottleRocketChallenge/blob/master/img/iPhone-1.png?raw=true | width=250)
+![iPhone-2.png](https://github.com/jorgevmendoza/BottleRocketChallenge/blob/master/img/iPhone-2.png?raw=true | width=250)
+![iPhone-3.png](https://github.com/jorgevmendoza/BottleRocketChallenge/blob/master/img/iPhone-3.png?raw=true | width=250)
+![iPad-1.png](https://github.com/jorgevmendoza/BottleRocketChallenge/blob/master/img/iPad-1.png?raw=true | width=250)
+![iPad-2.png](https://github.com/jorgevmendoza/BottleRocketChallenge/blob/master/img/iPad-2.png?raw=true | width=250)
+![iPad-3.png](https://github.com/jorgevmendoza/BottleRocketChallenge/blob/master/img/iPad-3.png?raw=true | width=250)
 
 ## Environment
 
