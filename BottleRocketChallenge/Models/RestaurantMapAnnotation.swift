@@ -10,7 +10,6 @@ import UIKit
 import MapKit
 
 class RestaurantMapAnnotation: NSObject, MKAnnotation {
-    
     let title: String?
     let name: String
     let coordinate: CLLocationCoordinate2D
@@ -19,12 +18,12 @@ class RestaurantMapAnnotation: NSObject, MKAnnotation {
         self.title = title
         self.name = name
         self.coordinate = coordinate
-        
         super.init()
+        
     }
     
     var subtitle: String? {
-        return name
+        return name    
     }
 
 }

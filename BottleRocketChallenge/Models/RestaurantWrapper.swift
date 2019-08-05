@@ -9,7 +9,6 @@
 import Foundation
 
 struct RestaurantWrapper:Codable {
-    
     let restaurants:[Restaurant]
     
 }

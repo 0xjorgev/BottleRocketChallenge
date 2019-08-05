@@ -9,13 +9,11 @@
 import UIKit
 
 class RestaurantCell: UICollectionViewCell {
-    
     @IBOutlet var backgroundImage:UIImageView?
     @IBOutlet var nameLabel:UILabel?
     @IBOutlet var categoryLabel:UILabel?
     var item:Restaurant? {
         didSet{
-            
             DispatchQueue.main.async { [weak self] in
                 
                 self?.setupViews()
@@ -27,10 +25,7 @@ class RestaurantCell: UICollectionViewCell {
     }
     
     private func setupViews(){
-        
         nameLabel?.addTitleStyle()
         categoryLabel?.addCategoryStyle()
-        
     }
-    
 }

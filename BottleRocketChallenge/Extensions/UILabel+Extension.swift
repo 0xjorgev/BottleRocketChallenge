@@ -11,28 +11,18 @@ import UIKit
 extension UILabel {
     
     func addTitleStyle(){
-        
         self.font = Font.nameFont
-        
         self.textColor = Color.titleColor
-        
     }
-    
     
     func addCategoryStyle(){
-        
         self.font = Font.categoryFont
-        
         self.textColor = Color.titleColor
-        
     }
     
-//    func addNavigationTitleStyle(){
-//        
-//        
-//        
-//    }
-    
-    
+    func addRestaurantDetailsStyle(){
+        self.font = Font.detailsFont
+        self.textColor = Color.detailFontColor
+    }
     
 }

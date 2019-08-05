@@ -10,21 +10,17 @@ import UIKit
 import WebKit
 
 class BrowserViewController: UIViewController {
-    
     var webView:WKWebView?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         view.backgroundColor = .white
-        
         setupWebView()
         setupConstraints()
         addBrowserButtons()
     }
     
     func addBrowserButtons() {
-        
         let backButton = UIBarButtonItem.init(image: UIImage(named:"ic_webBack"), style: .plain, target: self, action: #selector(goBack))
         let reloadButton = UIBarButtonItem.init(image: UIImage(named:"ic_webRefresh"), style: .plain, target: self, action: #selector(reaload))
         let forwardButton = UIBarButtonItem.init(image: UIImage(named:"ic_webForward"), style: .plain, target: self, action: #selector(goForward))
@@ -32,7 +28,6 @@ class BrowserViewController: UIViewController {
     }
     
     func setupConstraints(){
-        
         webView?.translatesAutoresizingMaskIntoConstraints = false
         guard let horizontalConstraint = webView?.centerXAnchor.constraint(equalTo: view.centerXAnchor) else { return  }
         guard let verticalConstraint = webView?.centerYAnchor.constraint(equalTo: view.centerYAnchor) else { return  }
@@ -42,13 +37,11 @@ class BrowserViewController: UIViewController {
     }
     
     func setupWebView(){
-        
         let rect = CGRect(x: 0.0, y: 0.0, width: 100.0, height: 100.0)
         let setup = WKWebViewConfiguration()
         webView = WKWebView(frame: rect, configuration: setup)
-        let url = URL(string: "https://www.bottlerocketstudios.com")
-        //Verify this with the Style Guide
-        let myRequest = URLRequest(url: url!)
+        guard let url = URL(string: "https://www.bottlerocketstudios.com") else { return }
+        let myRequest = URLRequest(url: url)
         view.addSubview(webView!)
         webView?.load(myRequest)
     }
@@ -64,5 +57,4 @@ class BrowserViewController: UIViewController {
     @objc func goForward(sender:UIBarButtonItem) {
         webView?.goForward()
     }
-
 }

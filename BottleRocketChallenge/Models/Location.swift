@@ -10,7 +10,6 @@ import Foundation
 import CoreLocation
 
 struct Location:Codable {
-    
     let address:String
     let crossStreet:String?
     let lat:Double
@@ -21,5 +20,5 @@ struct Location:Codable {
     let state:String
     let country:String
     let formattedAddress:[String]
-
+    
 }

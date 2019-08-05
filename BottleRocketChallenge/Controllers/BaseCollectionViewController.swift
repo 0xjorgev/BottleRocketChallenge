@@ -11,11 +11,9 @@ import UIKit
 private let reuseIdentifier = "Cell"
 
 class BaseCollectionViewController<T, Cell: UICollectionViewCell>: UICollectionViewController, UICollectionViewDelegateFlowLayout {
-    
     var items: [T]? {
         didSet {
             OperationQueue.main.addOperation { [weak self] in
-                
                 self?.collectionView.reloadData()
             }
         }
@@ -28,28 +26,20 @@ class BaseCollectionViewController<T, Cell: UICollectionViewCell>: UICollectionV
         getData()
     }
     // MARK: UICollectionViewDataSource
-
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
-
-
+    
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of items
         return items?.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
         let collectionViewSize = collectionView.frame.size.width
-        
         let padding:CGFloat = 5.0
-        
         switch UIDevice.current.userInterfaceIdiom {
             case UIUserInterfaceIdiom.pad:
                 return CGSize(width: (collectionViewSize - padding) / 2.0, height: 180.0)
-            
             default:
                 return CGSize(width: collectionViewSize, height: 180.0)
         }
@@ -61,7 +51,6 @@ class BaseCollectionViewController<T, Cell: UICollectionViewCell>: UICollectionV
     
     func startSpinner(){
         DispatchQueue.main.async { [weak self] in
-            
             self?.spinner?.isHidden = true
             self?.spinner?.hidesWhenStopped = true
             self?.spinner?.startAnimating()
@@ -70,13 +59,10 @@ class BaseCollectionViewController<T, Cell: UICollectionViewCell>: UICollectionV
     
     func stopSpinner(){
         DispatchQueue.main.async { [weak self] in
-            
             self?.spinner?.stopAnimating()
         }
     }
     
     open func getData(){
-        
     }
-
 }

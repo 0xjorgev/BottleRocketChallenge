@@ -9,8 +9,8 @@
 import Foundation
 
 struct Contact:Codable {
-    //Check Styling
     let phone:String
     let formattedPhone:String
     let twitter:String?
+    
 }
