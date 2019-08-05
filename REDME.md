@@ -2,12 +2,12 @@
 
 This project is an app developed according to _Bottle Rocket iOS Engineering Test_ Document. It does not contains any third party library and was built using vanilla Swift with UIKit.
 
-![alt text](https://github.com/jorgevmendoza/BottleRocketChallenge/blob/master/img/iPhone-1.png?raw=true =250x "iPhone Launch Screen")
-![alt text](https://github.com/jorgevmendoza/BottleRocketChallenge/blob/master/img/iPhone-2.png?raw=true =250x "iPhone Restaurants View")
-![alt text](https://github.com/jorgevmendoza/BottleRocketChallenge/blob/master/img/iPhone-3.png?raw=true =250x "iPhone Restaurant's Details View")
-![alt text](https://github.com/jorgevmendoza/BottleRocketChallenge/blob/master/img/iPad-1.png?raw=true =250x "iPad Launch Screen")
-![alt text](https://github.com/jorgevmendoza/BottleRocketChallenge/blob/master/img/iPad-2.png?raw=true =250x "iPad Restaurants View")
-![alt text](https://github.com/jorgevmendoza/BottleRocketChallenge/blob/master/img/iPad-3.png?raw=true =250x "iPad Restaurant's Details View")
+![iPhone-1.png](https://github.com/jorgevmendoza/BottleRocketChallenge/blob/master/img/iPhone-1.png?raw=true =250x)
+![iPhone-2.png](https://github.com/jorgevmendoza/BottleRocketChallenge/blob/master/img/iPhone-2.png?raw=true =250x)
+![iPhone-3.png](https://github.com/jorgevmendoza/BottleRocketChallenge/blob/master/img/iPhone-3.png?raw=true =250x)
+![iPad-1.png](https://github.com/jorgevmendoza/BottleRocketChallenge/blob/master/img/iPad-1.png?raw=true =250x)
+![iPad-2.png](https://github.com/jorgevmendoza/BottleRocketChallenge/blob/master/img/iPad-2.png?raw=true =250x)
+![iPad-3.png](https://github.com/jorgevmendoza/BottleRocketChallenge/blob/master/img/iPad-3.png?raw=true =250x)
 
 ## Environment
 
